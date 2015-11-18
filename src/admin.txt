@@ -1,0 +1,7 @@
+/add_product.jsp
+/addproduct
+/orders.jsp
+/rank.jsp
+/listOrders
+/showRank
+/exportRank

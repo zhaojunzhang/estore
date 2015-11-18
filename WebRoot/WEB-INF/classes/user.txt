@@ -1,0 +1,13 @@
+/cart.jsp
+/orders.jsp
+/pay.jsp
+/addCart
+/clearCart
+/delCartItem
+/updateCart
+/add_orders.jsp
+/addOrder
+/listOrders
+/cancelOrders
+/pay
+/confirm.jsp

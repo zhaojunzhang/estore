@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<filter>
+	<filter-name>PrivilegeFilter</filter-name>
+	<filter-class>cn.itcast.web.filter.PrivilegeFilter</filter-class>
+	</filter>
+	<filter-mapping>
+	<filter-name>PrivilegeFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+	<filter-name>EncodingFilter</filter-name>
+	<filter-class>cn.itcast.web.filter.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+	<filter-name>EncodingFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.CheckcodeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <url-pattern>/checkcode</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegistServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.RegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActiveServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.AddProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListProductServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ListProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowProductServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ShowProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCartServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.AddCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ClearCartServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ClearCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelCartItemServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.DelCartItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateCartServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.UpdateCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddOrdersServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.AddOrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListOrdersServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ListOrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CancelOrdersServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.CancelOrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PayServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.PayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CallBackServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.CallBackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowRankServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ShowRankServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExportRankServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ExportRankServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>RegistServlet</servlet-name>
+    <url-pattern>/regist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActiveServlet</servlet-name>
+    <url-pattern>/active</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/addproduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListProductServlet</servlet-name>
+    <url-pattern>/listproduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowProductServlet</servlet-name>
+    <url-pattern>/showProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCartServlet</servlet-name>
+    <url-pattern>/addCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearCartServlet</servlet-name>
+    <url-pattern>/clearCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelCartItemServlet</servlet-name>
+    <url-pattern>/delCartItem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateCartServlet</servlet-name>
+    <url-pattern>/updateCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddOrdersServlet</servlet-name>
+    <url-pattern>/addOrders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListOrdersServlet</servlet-name>
+    <url-pattern>/listOrders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CancelOrdersServlet</servlet-name>
+    <url-pattern>/cancelOrders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayServlet</servlet-name>
+    <url-pattern>/pay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CallBackServlet</servlet-name>
+    <url-pattern>/callback</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowRankServlet</servlet-name>
+    <url-pattern>/showRank</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportRankServlet</servlet-name>
+    <url-pattern>/exportRank</url-pattern>
+  </servlet-mapping>
+  
+  
+  <error-page>
+  <error-code>500</error-code>
+  <location>/500.jsp</location>
+  </error-page>
+   <error-page>
+  <error-code>404</error-code>
+  <location>/404.jsp</location>
+  </error-page>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
